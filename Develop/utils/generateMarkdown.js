@@ -1,7 +1,6 @@
 function generateMarkdown(data) {
   return `
-
-![README](https://img.shields.io/badge/NODE-README-blue?style=plastic&logo=appveyor)
+![README](https://img.shields.io/badge/NODE-${data.title}-red?style=plastic&logo=appveyor)
 ![License](https://img.shields.io/badge/${data.license}-100%-blue?style=plastic&logo=appveyor)
 
 # ${data.title}
@@ -14,10 +13,10 @@ ${data.description}
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
-* [License](#license)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
+* [License](#license)
 
 ## Installation
 
@@ -27,7 +26,6 @@ To install README generator use: ${data.installation}
 
 ${data.usage}
 
-
 ## Contributing
 
 ${data.contributing}
@@ -35,7 +33,7 @@ ${data.contributing}
 ## Credits
 
 Name: ${data.github} 
-Email: ${data.email} 
+Email:${data.email} 
 
 ## Tests
 
@@ -43,9 +41,10 @@ to test use: ${data.test}
 
 ## Questions
 
-${data.message}
 
+## License
 
+Licensed under the ${data.license} license.
 
 `;
 }

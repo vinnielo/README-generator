@@ -62,7 +62,7 @@ const questionArr = [
 
 function writeToFile(fileName, data) {
     //expected arguments is path and data
-    return $;
+    return fs.writeFileSync(path.join(process.cwd(),fileName), data);
 }
 
 function startGeneratingReadMe() {

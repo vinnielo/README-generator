@@ -1,13 +1,11 @@
-
-
 ![README](https://img.shields.io/badge/NODE-README-blue?style=plastic&logo=appveyor)
-![License](https://img.shields.io/badge/APACHE_2.0-100%-blue?style=plastic&logo=appveyor)
+![License](https://img.shields.io/badge/GPL_3.0-100%-blue?style=plastic&logo=appveyor)
 
-# The Nightman Cometh
+#  sdfgdfgdfsg sdf
 
 ## Description
 
-Nightman is abducting kids and only the Dayman can stop him. Dayman...Fighter of the Nightman...Champion of the Sun...you're a master of karate and friendship for everyone!
+sdfgdsfgs g sijhsdklghjd llsdkjghdflkj ghlsdkjhg sdlgh lkdfjh glsdkjhdf lgkjhf lksdhjfg lkjgh lsdfkjhfl kjh kjh ljhlkh lkdjhgdkjlh glkhjgpi psguhgpfojn9s5bpdtjn5p9eu ngpdng psng 9penp9n5gdopgs89 5ss8npons ne8 g8ng8g no8 ne8o ep g8ope pgen op p 5p8 g59 gp5e gngopn ep89gnpo4-bnp gonj- r9nerornoijn0r9un gpjn r-gn 
 
 ## Table of Contents
 * [Installation](#installation)
@@ -24,14 +22,17 @@ To install README generator use: npm i
 
 ## Usage
 
-that if they dont the Nightman wins
+purhgpmervmvovj oprtnjvoigjr  jvgopijgo ogjtornntin ng pi n tgn op dlfkmg gmgklfgdlgkrto gnroijgnitgnjnrt igjnrogintignj gprenjg eroijgn reognje roignje rtint rihre
 
 
 ## Contributing
 
-that all credit will be given to those who contributed
+e;lrjgeirnigtnirejniet orvmltnjodihcomnricngtmpinvgir gjkdlfnvt prgjnvgmnp eprotjgvpt
 
-contributors: Vinnie Vinnielo@gmail.com 
+## Credits
+
+Name: sdgds dsgsfdf  
+Email:sdfgsdfgsd fs sdfg  
 
 ## Tests
 
@@ -39,7 +40,7 @@ to test use: npm test
 
 ## Questions
 
-undefined
+
 
 
 
