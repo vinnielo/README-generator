@@ -1,6 +1,6 @@
-function generateMarkdown(data) {
+function generateMarkdown(data, image) {
   return `
-![README](https://img.shields.io/badge/NODE-${data.title}-red?style=plastic&logo=appveyor)
+![README](https://img.shields.io/badge/NODE-${data.badge}-red?style=plastic&logo=appveyor)
 ![License](https://img.shields.io/badge/${data.license}-100%-blue?style=plastic&logo=appveyor)
 
 # ${data.title}
@@ -16,7 +16,7 @@ ${data.description}
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
-* [License](#license)
+* [License](#license)vi
 
 ## Installation
 
@@ -32,8 +32,7 @@ ${data.contributing}
 
 ## Credits
 
-Name: ${data.github} 
-Email:${data.email} 
+* Name: ${data.github} 
 
 ## Tests
 
@@ -41,6 +40,8 @@ to test use: ${data.test}
 
 ## Questions
 
+* Email: ${data.email} 
+![profilePic](${image})
 
 ## License
 

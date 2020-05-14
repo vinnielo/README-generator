@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const inquirer = require("inquirer");
+const axios = require("axios");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 //array of question objects
@@ -8,32 +9,32 @@ const questionArr = [
     {
         type: "input",
         name: "github",
-        message: "What is your GitHub username?"
+        message: "What's your GitHub username?"
       },
       {
         type: "input",
         name: "email",
-        message: "What is your email?"
+        message: "What's your email?"
       },
       {
         type: "input",
         name: "URL to Project",
-        message: "the URL to your project?"
+        message: "What is the URL to your project?"
       },
       {
         type: "input",
         name: "title",
-        message: "What is your project's name?"
+        message: "What the title of your project?"
       },
       {
         type: "input",
         name: "description",
-        message: "Please write a short description of your project"
+        message: "Please write a short description of your project."
       },
       {
         type: "list",
         name: "license",
-        message: "What kind of license should your project have?",
+        message: "What licenses are you using?",
         choices: ["MIT", "APACHE_2.0", "GPL_3.0", "BSD_3", "None"]
       },
       {
@@ -57,6 +58,11 @@ const questionArr = [
         type: "input",
         name: "contributing",
         message: "What does the user need to know about contributing to the repo?",
+      },
+      {
+        type: "input",
+        name: "badge",
+        message: "What does your badge need to say?"
       }
 ];
 
@@ -66,9 +72,16 @@ function writeToFile(fileName, data) {
 }
 
 function startGeneratingReadMe() {
+    // pushes data over to the markdown to create README
     inquirer.prompt(questionArr).then((answers) => {
-        writeToFile("README.md", generateMarkdown({ ...answers }));
+        const queryURl = `https://api.github.com/users/${answers.github}`; 
+        axios.get(queryURl).then((res) => {
+        const imgUrl = res.data.avatar_url;
+        
+        writeToFile("README.md", generateMarkdown({ ...answers }, imgUrl));
+        });
     });
 }
 
+// executes the generateReadMe
 startGeneratingReadMe();
